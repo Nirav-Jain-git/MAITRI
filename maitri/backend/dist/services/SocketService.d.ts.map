@@ -1,0 +1,1 @@
+{"version":3,"file":"SocketService.d.ts","sourceRoot":"","sources":["../../src/services/SocketService.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,MAAM,EAAE,MAAM,WAAW,CAAC;AACnC,OAAO,EAAE,SAAS,EAAE,MAAM,aAAa,CAAC;AAGxC,qBAAa,aAAa;IACxB,OAAO,CAAC,EAAE,CAAS;IACnB,OAAO,CAAC,SAAS,CAAY;gBAEjB,EAAE,EAAE,MAAM,EAAE,SAAS,EAAE,SAAS;IAKrC,aAAa,IAAI,IAAI;CAgD7B"}

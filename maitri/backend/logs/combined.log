@@ -1,0 +1,79 @@
+2025-10-16 18:59:25 [info]: Database initialized successfully
+2025-10-16 18:59:25 [info]: Database initialized successfully
+2025-10-16 18:59:25 [error]: AI Service Response Error:
+2025-10-16 18:59:25 [warn]: AggregateError: Error
+    at Function.AxiosError.from (A:\SIH_2\maitri\backend\node_modules\axios\lib\core\AxiosError.js:96:14)
+    at RedirectableRequest.handleRequestError (A:\SIH_2\maitri\backend\node_modules\axios\lib\adapters\http.js:638:25)
+    at RedirectableRequest.emit (node:events:531:35)
+    at RedirectableRequest.emit (node:domain:488:12)
+    at ClientRequest.eventHandlers.<computed> (A:\SIH_2\maitri\backend\node_modules\follow-redirects\index.js:49:24)
+    at ClientRequest.emit (node:events:519:28)
+    at ClientRequest.emit (node:domain:488:12)
+    at emitErrorEvent (node:_http_client:108:11)
+    at Socket.socketErrorListener (node:_http_client:511:5)
+    at Socket.emit (node:events:519:28)
+    at Axios.request (A:\SIH_2\maitri\backend\node_modules\axios\lib\core\Axios.js:45:41)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async AIService.checkHealth (A:\SIH_2\maitri\backend\src\services\AIService.ts:113:24)
+    at async AIService.initialize (A:\SIH_2\maitri\backend\src\services\AIService.ts:103:7)
+    at async App.start (A:\SIH_2\maitri\backend\src\index.ts:115:7)
+2025-10-16 18:59:25 [info]: AI Service initialized successfully
+2025-10-16 18:59:25 [info]: AI service initialized successfully
+2025-10-16 18:59:25 [info]: Socket.IO service initialized
+2025-10-16 18:59:25 [info]: Server running on port 5000
+2025-10-16 18:59:25 [info]: Environment: development
+2025-10-16 18:59:40 [info]: Database initialized successfully
+2025-10-16 18:59:40 [info]: Database initialized successfully
+2025-10-16 18:59:40 [error]: AI Service Response Error:
+2025-10-16 19:00:38 [info]: Database initialized successfully
+2025-10-16 19:00:38 [info]: Database initialized successfully
+2025-10-16 19:00:39 [error]: AI Service Response Error:
+2025-10-16 19:00:39 [warn]: AggregateError: Error
+    at Function.AxiosError.from (A:\SIH_2\maitri\backend\node_modules\axios\lib\core\AxiosError.js:96:14)
+    at RedirectableRequest.handleRequestError (A:\SIH_2\maitri\backend\node_modules\axios\lib\adapters\http.js:638:25)
+    at RedirectableRequest.emit (node:events:531:35)
+    at RedirectableRequest.emit (node:domain:488:12)
+    at ClientRequest.eventHandlers.<computed> (A:\SIH_2\maitri\backend\node_modules\follow-redirects\index.js:49:24)
+    at ClientRequest.emit (node:events:519:28)
+    at ClientRequest.emit (node:domain:488:12)
+    at emitErrorEvent (node:_http_client:108:11)
+    at Socket.socketErrorListener (node:_http_client:511:5)
+    at Socket.emit (node:events:519:28)
+    at Axios.request (A:\SIH_2\maitri\backend\node_modules\axios\lib\core\Axios.js:45:41)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async AIService.checkHealth (A:\SIH_2\maitri\backend\src\services\AIService.ts:113:24)
+    at async AIService.initialize (A:\SIH_2\maitri\backend\src\services\AIService.ts:103:7)
+    at async App.start (A:\SIH_2\maitri\backend\src\index.ts:115:7)
+2025-10-16 19:00:39 [info]: AI Service initialized successfully
+2025-10-16 19:00:39 [info]: AI service initialized successfully
+2025-10-16 19:00:39 [info]: Socket.IO service initialized
+2025-10-16 19:00:39 [info]: Server running on port 5000
+2025-10-16 19:00:39 [info]: Environment: development
+2025-10-16 19:01:22 [info]: SIGINT received, shutting down gracefully
+2025-10-16 19:01:22 [info]: Database connection closed
+2025-10-16 19:35:26 [info]: Database initialized successfully
+2025-10-16 19:35:26 [info]: Database initialized successfully
+2025-10-16 19:35:26 [error]: AI Service Response Error:
+2025-10-16 19:35:26 [warn]: AggregateError: Error
+    at Function.AxiosError.from (A:\SIH_2\maitri\backend\node_modules\axios\lib\core\AxiosError.js:96:14)
+    at RedirectableRequest.handleRequestError (A:\SIH_2\maitri\backend\node_modules\axios\lib\adapters\http.js:638:25)
+    at RedirectableRequest.emit (node:events:531:35)
+    at RedirectableRequest.emit (node:domain:488:12)
+    at ClientRequest.eventHandlers.<computed> (A:\SIH_2\maitri\backend\node_modules\follow-redirects\index.js:49:24)
+    at ClientRequest.emit (node:events:519:28)
+    at ClientRequest.emit (node:domain:488:12)
+    at emitErrorEvent (node:_http_client:108:11)
+    at Socket.socketErrorListener (node:_http_client:511:5)
+    at Socket.emit (node:events:519:28)
+    at Axios.request (A:\SIH_2\maitri\backend\node_modules\axios\lib\core\Axios.js:45:41)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async AIService.checkHealth (A:\SIH_2\maitri\backend\src\services\AIService.ts:113:24)
+    at async AIService.initialize (A:\SIH_2\maitri\backend\src\services\AIService.ts:103:7)
+    at async App.start (A:\SIH_2\maitri\backend\src\index.ts:115:7)
+2025-10-16 19:35:26 [info]: AI Service initialized successfully
+2025-10-16 19:35:26 [info]: AI service initialized successfully
+2025-10-16 19:35:26 [info]: Socket.IO service initialized
+2025-10-16 19:35:26 [info]: Server running on port 5000
+2025-10-16 19:35:26 [info]: Environment: development
+2025-10-16 19:53:50 [info]: ::1 - - [16/Oct/2025:14:23:50 +0000] "GET /api/health HTTP/1.1" 200 157 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+2025-10-16 19:53:50 [info]: ::1 - - [16/Oct/2025:14:23:50 +0000] "GET /favicon.ico HTTP/1.1" 404 67 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"

@@ -1,0 +1,102 @@
+version: '3.8'
+
+services:
+  # Frontend React App
+  frontend:
+    build:
+      context: ../frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - REACT_APP_API_URL=http://localhost:5000/api
+      - REACT_APP_SOCKET_URL=http://localhost:5000
+    volumes:
+      - ../frontend:/app
+      - /app/node_modules
+    depends_on:
+      - backend
+    networks:
+      - maitri-network
+    restart: unless-stopped
+
+  # Backend Node.js API
+  backend:
+    build:
+      context: ../backend
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    environment:
+      - NODE_ENV=production
+      - PORT=5000
+      - DATABASE_PATH=/app/data/maitri.db
+      - AI_SERVICE_URL=http://ai-service:8000
+      - FRONTEND_URL=http://localhost:3000
+      - LOG_LEVEL=info
+    volumes:
+      - ../backend:/app
+      - /app/node_modules
+      - backend-data:/app/data
+      - backend-logs:/app/logs
+    depends_on:
+      - ai-service
+    networks:
+      - maitri-network
+    restart: unless-stopped
+
+  # AI Service Python
+  ai-service:
+    build:
+      context: ../ai-service
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - ENVIRONMENT=production
+      - PORT=8000
+      - LOG_LEVEL=INFO
+    volumes:
+      - ../ai-service:/app
+      - ai-models:/app/models
+      - ai-logs:/app/logs
+    deploy:
+      resources:
+        limits:
+          memory: 2G
+        reservations:
+          memory: 1G
+    networks:
+      - maitri-network
+    restart: unless-stopped
+
+  # Database initialization (runs once)
+  db-init:
+    image: alpine:latest
+    volumes:
+      - backend-data:/data
+    command: >
+      sh -c "
+        mkdir -p /data &&
+        chmod 755 /data &&
+        echo 'Database directory initialized'
+      "
+    networks:
+      - maitri-network
+
+volumes:
+  backend-data:
+    driver: local
+  backend-logs:
+    driver: local
+  ai-models:
+    driver: local
+  ai-logs:
+    driver: local
+
+networks:
+  maitri-network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16
